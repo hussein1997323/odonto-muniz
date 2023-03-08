@@ -5,19 +5,24 @@ body {
     color: rgb(102, 100, 100);
     font-family:ink free;
     line-height: 15px;
-    
 }
 
-button{
-    justify-content: space-around;
-    border: none;
-    font-family:ink free;
-    
-
-}
 #logo {
     width: 30%;
     border-radius: 65%;
+}
+
+p{
+    font-size: 20px
+}
+button{
+    justify-content: space-around;
+    border: none;
+    font-family:ink free;  
+    padding: 16px 24px;
+    border: 1px solid #0f7b12;
+    font-size: 20px;
+
 }
 
 button:hover {
