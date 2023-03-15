@@ -31,3 +31,9 @@ button:hover {
     
   }
 
+
+  @media (max-width: 570px) {
+    button div {
+      display: none;
+    }
+  }
