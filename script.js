@@ -3,7 +3,7 @@ const cadastro = document.getElementById("btnCadastro");
 cadastro.addEventListener("click", fnNewPage)
 
 function fnNewPage(btnCadastro){
-   const win = window.open("./cadastro/formCadastro.html")
+   const win = window.open("./cadastro/formCadastro.html","_self")
 }
 
 const prontuario = document.getElementById("btnProntuario");
@@ -25,6 +25,3 @@ function fnNewPageThree(){
     return
 
 }
-
-alert(teste)
-return
