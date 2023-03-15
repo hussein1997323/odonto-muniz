@@ -25,3 +25,6 @@ function fnNewPageThree(){
     return
 
 }
+
+alert(teste)
+return
