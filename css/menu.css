@@ -12,9 +12,10 @@ body {
     border-radius: 65%;
 }
 
-p{
+p {
     font-size: 20px
 }
+
 button{
     justify-content: space-around;
     border: none;
@@ -32,13 +33,14 @@ button:hover {
   }
 
 
-
-
-
-  
-
   @media (max-width: 570px) {
     button div {
       display: none;
     }
+  }
+
+
+  input {
+    appearance: none;
+    -webkit-appearance: none;
   }
