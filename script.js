@@ -1,30 +1,30 @@
 const cadastro = document.getElementById("btnCadastro");
 
-cadastro.addEventListener("click", fnNewPage)
+cadastro.addEventListener("click", fnNewPageCadastro)
 
-function fnNewPage(btnCadastro){
+function fnNewPageCadastro(btnCadastro){
    const win = window.open("./cadastro/formCadastro.html","_self")
 }
 
+
+
 const prontuario = document.getElementById("btnProntuario");
 
-prontuario.addEventListener("click", fnNewPageTwo)
+prontuario.addEventListener("click", fnNewPageProntuario)
 
-function fnNewPageTwo(){
-    alert ("ESTÁ FUNCIONANDO 2")
-    return
-
+function fnNewPageProntuario(btnProntuario){
+   const win = window.open("./prontuario/formProntuario.html","_self")
 }
+
 
 const agenda = document.getElementById("btnAgenda");
 
-agenda.addEventListener("click", fnNewPageThree)
+agenda.addEventListener("click", fnNewPageAgenda)
 
-function fnNewPageThree(){
-    alert ("ESTÁ FUNCIONANDO 3")
-    return
-   
+function fnNewPageAgenda(btnAgenda){
+   const win = window.open("./agenda/formAgenda.html","_self")
 }
+   
 
 function mascara(i,t){
 
@@ -43,6 +43,6 @@ function mascara(i,t){
     
  else{
           i.setAttribute("maxlength", "9");
-          if (v.length == 4) i.value += "-";
-       }
+          if (v.length == 4) i.value +="-";
+ }
  }
