@@ -41,3 +41,9 @@ button:hover {
       display: none;
     }
   }
+
+    input {
+      appearance: none;
+      -webkit-appearance: none;
+    }
+  
