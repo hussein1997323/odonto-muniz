@@ -24,19 +24,13 @@ body {
     width: 132px;
     height: 24px;
     align-items: center;
-padding: 16px 138px;
-gap: 10px;
+    padding: 16px 138px;
+    gap: 10px;
 }
 
 button{
     align-items: flex-end;
-}
-    
-
-
-
-
-button{
+    border-radius: 30%;
     justify-content: space-around;
     border: none;
     font-family:ink free;  
@@ -50,9 +44,6 @@ button:hover {
     background-color: #5e9b84;
 
 }
-
-
-
 
 input {
     appearance: none;
