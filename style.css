@@ -6,7 +6,7 @@ body {
     color: rgb(36, 32, 32);
     text-align: center;
     color: rgb(102, 100, 100);
-    font-family:ink free;
+    font-family: 'Inter', sans-serif;
     line-height: 15px;
 }
 
@@ -21,11 +21,12 @@ p{
 button{
     justify-content: space-around;
     border: none;
-    font-family:ink free;  
-    padding: 8px 0px;
+    font-family: 'Inter', sans-serif;  
+    padding: 5px 5px 4px;
     border: 1px solid #0f7b12;
     font-size: 15px;
     cursor: pointer;
+    border-radius: 20%;
     
   }
 
