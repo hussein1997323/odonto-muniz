@@ -22,9 +22,9 @@ button{
     justify-content: space-around;
     border: none;
     font-family:ink free;  
-    padding: 16px 24px;
+    padding: 8px 0px;
     border: 1px solid #0f7b12;
-    font-size: 20px;
+    font-size: 15px;
     cursor: pointer;
     
   }
