@@ -48,7 +48,14 @@ input {
     border-radius: 32px;
     appearance: none;
     -webkit-appearance:none;
-   
-    
-  }
+    background: #fff;
+    border: 2px solid #424242;
+    border-radius: 15px;
+    color: #424242;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 6px 16px;
+    width: 100%;
+    }
+
 
