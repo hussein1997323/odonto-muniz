@@ -1,0 +1,33 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>Controle de gastos</title>
+</head>
+<img src="../Imagem/logo.svg" alt="">
+<body>
+    <form>
+        <div class="form-field">
+            <div><label>Email</label></div>
+            <input type="email" name="email" id="email" onchange="validetefields()" placeholder="seu@email.com" />
+
+        </div>
+        <div class="form-field">
+            <div ><label></label></div>
+            <input type="password" name="password" id="password"  placeholder="Senha" />
+            <div class="error" id="password-required-error"></div>
+        </div>
+        <div>
+            <button type="button" class="clear" disabled="true" id="recover-password-button" >Recuperar senha</button>
+        </div>
+        <div>
+            <button type="button" class="solid" id="login-button" disabled="true"  onclick="login()">Entrar</button>
+        </div>
+      
+    </form>
+</body>
+<script src="../js/login.js"></script>
+<link rel="stylesheet" href="../css/login.css">
+
+</html>
