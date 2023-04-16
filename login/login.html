@@ -7,29 +7,34 @@
 </head>
 
 <body>
-    <form>
-        <div class="form-field">
+    <img src="login.svg" alt="card-footer" id="img">
+    <div id="login">
+    <form class="card">
+        <div class="card-content-area">
             <div><label>Email</label></div>
             <input type="email" name="email" id="email" placeholder="seu@email.com" />
 
         </div>
-        <div class="form-field">
+        <div class="card-content-area">
             <div><label>Senha</label></div>
             <input type="password" name="password" id="password" placeholder="Senha" />
             <div class="error" id="password-required-error">Senha é obrigatória</div>
         </div>
-        <div>
-            <button type="button" class="clear" id="recover-password-button" >Recuperar senha</button>
+        <div class="card-footer">
+            <button type="button" class="submit" id="recover-password-button" >Recuperar senha</button>
         </div>
-        <div>
-            <button type="button" class="solid" id="login-button"  onclick="login()">Entrar</button>
+        <div class="card-footer">
+            <button type="button" class="submit" id="login-button"  onclick="login()">Entrar</button>
         </div>
-        <div>
-            <button type="button" class="outline" onclick="register()">Registrar</button>
+        <div class="card-footer">
+            <button type="button" class="submit" onclick="register()">Registrar</button>
         </div>
     </form>
+    </div>
 </body>
-<script src="login.js"></script>
+<script src="js.script"></script>
+<link rel="stylesheet" href="/login/login.css">
 
+</html>
 
 </html>
