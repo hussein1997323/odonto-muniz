@@ -3,7 +3,7 @@ const cadastro = document.getElementById("btnCadastro");
 cadastro.addEventListener("click", fnNewPageCadastro)
 
 function fnNewPageCadastro(btnCadastro){
-   const win = window.open("./cadastro/formCadastro.html","_self")
+   const win = window.open("../assets/html/formCadastro.html","_self")
 }
 
 
