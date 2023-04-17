@@ -1,31 +1,33 @@
+<!doctype html>
 
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-       <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Muniz Odontologia </title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link href="./assets/html/formCadastro.html"/>
-    <link href="./assets/html/formAgenda.html"/>
-    <link href="./assets/html/formProntuario.html"/>
-    <link href="./assets/html/log.html"/>
-  </head>
-<body>  
+<html>
 
+<head>
+    <title>Login - Muniz Odontologia </title>
+</head>
+<img src="./assets/Imagem/logo.svg" alt="Logotipo">
+<body>
+    <form>
+        <div class="form-field">
+            <div><label></label></div>
+            <input type="email" name="email" id="email" onchange="validetefields()" placeholder="seu@email.com" />
 
-<img src="./assets/Imagem/logo.svg" alt="Logomarca do consultório" id="logo"/> 
-<h1>Seja bem-vindo(a)</h1>
-<p> Escolha uma opção:</p>  
-
-<button onclick="fnNewPage" id="btnCadastro"> Cadastro  </button>
-<button id="btnProntuario">Prontuário </button>
-<button id="btnAgenda">Agenda </button>
-
-<script type="text/javascript" src="./assets/js/script.js"></script>
-
-
+        </div>
+        <div class="form-field">
+            <div ><label></label></div>
+            <input type="password" name="password" id="password"  placeholder="Senha" />
+            <div class="error" id="password-required-error"></div>
+        </div>
+        <div>
+            <button type="button" class="clear" disabled="true" id="recover-password-button" >Recuperar senha</button>
+        </div>
+        <div>
+            <button type="button" class="solid" id="login-button" disabled="true"  onclick="login()">Entrar</button>
+        </div>
+      
+    </form>
 </body>
+<script src="./assets/js/index.js"></script>
+<link rel="stylesheet" href="./assets/css/index.css">
 
 </html>

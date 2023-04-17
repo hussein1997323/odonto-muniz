@@ -1,5 +1,5 @@
 function login() {
-    window.location.href = "/index.html";
+    window.location.href = "./menu.html";
 }
 
 function validetefields(){
