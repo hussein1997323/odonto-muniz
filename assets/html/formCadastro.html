@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <link href="../cadastro.php" />
     <link rel="stylesheet" href="../css/cadastro.css" />
+    <script src="../cadastro.js"></script>
     <title>Cadastro de Pacientes</title>
 </head>
 <body>
@@ -23,39 +25,30 @@
             <br />
             <div class="input-block">
                 <label for ="nascimento">DATA DE NASCIMENTO:</label>
-                <input type ="date" placeholder="data de nascimento"/  placeholder="DATA DE NASCIMENTO">
+                <input type ="date" id="dateofbrith" placeholder="data de nascimento" />
             </div>
             <br/>
             <div class="input-block">
-                <input type ="number"  placeholder="CEP"/>
+                <input type ="cep" id="cep" placeholder="CEP"/>
             </div>
             <br/>
             <div class="input-block">
-               <input type ="text"  placeholder="RUA"/>
+               <input type ="text" id="road"  placeholder="RUA"/>
             </div>
             <br/>
             <div class="input-block">
-                <input type ="number"  placeholder="N°"/>
+                <input type ="text" id="numero"  placeholder="N°"/>
             </div>
             <br/>
             <div class="input-block">
-                <input type ="text"  placeholder="COMPLEMENTO"/>
+                <input type ="text" id="complement" placeholder="COMPLEMENTO"/>
             </div>
             <button id="salvar"> SALVAR </button>
             <button id="cancelar"> CANCELAR </button>
         </form>
 
    
-        <script>
-            function mascara_cpf() {
-                var cpf = document.getElementById('cpf')
-                if(cpf.value.length == 3 || cpf.value.length == 7) {
-                    cpf.value += "."
-                } else if (cpf.value.length == 11) {
-                    cpf.value += "-"
-                }
-            }
-        </script>
+    
 
 
 </body>
