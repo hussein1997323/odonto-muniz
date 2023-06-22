@@ -1,16 +1,30 @@
 <?php
-$host = "localhost";
-$dbusername = "root";
-$db_password = "";
-$db_name = "cadastro";
 
+define('HOST','localhost');
+define('DATABASENAME','cadastro');
+define('USER','root');
+define('PASSOWARD','');
 
-$conexao = new mysqli($host, $dbusername, $db_password, $db_name );
+class connect{
+    protected $connection;
+    function __construct()
+    {
+      $this->connectDatabase();
+    }
+   
+     function connectDatabase()
+     {
+        try
+        {
+       $this->connection =new PDO('mysql:host='.HOST.';dbname='.DATABASENAME, USER, PASSOWARD);
+        }
+        catch(PDOException $e) 
+        {
+        echo "Error!".$e->getMessage();
+        die();
+        }
 
-if($conexao-> connect_errno){
-    echo "erro";
+     }
 }
-else{
-    echo"conexão com sucesso";
-}
+$testconnection = new connect();
 ?>
