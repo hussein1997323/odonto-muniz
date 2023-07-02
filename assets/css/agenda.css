@@ -1,0 +1,15 @@
+body {
+    width: center;
+    padding:10px;
+    border: 100px center gray;
+    margin: auto;
+    height: fit-content;
+
+    background-color: #b9f6bb;
+    text-align: center;
+    color: rgb(102, 100, 100);
+    font-family: 'Inter', sans-serif; 
+    line-height: 15px;
+    box-sizing: border-box;
+}
+
