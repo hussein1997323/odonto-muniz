@@ -1,3 +1,6 @@
+<?php
+include('php/cadastro.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +9,6 @@
     <meta name="viewport" content="width=device-width>, initial-scale=1.0">
     <link rel="stylesheet" href="../css/cadastro.css" />
     <script src="../cadastro.js"></script>
-    <link rel="stylesheet" href="../php/cadastro.php">
     <title>Cadastro de Pacientes</title>
 
 </head>
@@ -65,3 +67,33 @@
 
 </body>
 </html>
+
+<?php
+ 
+
+      include('conexcao/config.php');
+        if(isset($_POST['env'] ) && $_POST['env'] && "cadastro" ){
+            
+            $nome =$_POST ['nome'];
+            $cpf =$_POST ['cpf'];
+            $dateofbrith =$_POST ['dateofbrith'];
+            $genero =$_POST ['genero'];
+            $cep =$_POST ['cep'];
+            $road =$_POST ['road'];
+            $numero =$_POST ['numero'];
+            $complement =$_POST ['complement'];
+          
+         $sql = "INSERT INTO paceinte (nome, cpf, dateofbrith, genero, cep, road, numero, complement ) VALUES ('$nome', '$cpf', '$dateofbrith', '$genero', '$cep', '$road', '$numero', '$complement')";
+            if ($mysqli ->query($sql) ) {
+    
+   
+                echo "Dados inseridos com sucesso!";
+                } else {
+                    
+                   
+                echo "Erro ao inserir dados: " ;
+                }
+                
+            } 
+        
+        ?>

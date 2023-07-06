@@ -6,3 +6,4 @@ function mascara_cpf() {
         cpf.value += "-"
     }
 }
+      

@@ -1,15 +1,13 @@
 <?php
 
-$dbhost = 'localhost';
-$dbUsername = 'root';
-$dbpassowrd = '';
-$dbName = 'cadastro';
-
-$conexao = new mysqli($dbhost,$dbUsername,$dbpassowrd,$dbName);
-
-if($conexao->connect_errno)
-{
-    echo "conectado";
+$dbhost ='localhost';
+$dbuser ='root';
+$dbpass ='';
+$dbname ='cadastro';
+   
+$mysqli = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
+if( $mysqli-> connect_errno){
+printf("connetion failed", $mysqli-> connect_error);
+exit();
 }
-
 ?>
