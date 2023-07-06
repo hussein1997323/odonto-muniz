@@ -1,5 +1,5 @@
 <?php
-include('php/cadastro.php');
+include_once('odonto-muniz-main/formcadastro.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,7 +15,7 @@ include('php/cadastro.php');
 <body>
 
     
-    <form id="form-cadastro">
+    <form method="post" action="" enctype="multipart/form-data" id="form-cadastro">
         <form method="post" action="" enctype="multipart/form-data" >
             <p> INSIRA AS INFORMAÇÕES </p>
             <div class="input-block">
@@ -69,7 +69,7 @@ include('php/cadastro.php');
 </html>
 
 <?php
- 
+ include_once('odonto-muniz-main/formcadastro.php');
 
       include('conexcao/config.php');
         if(isset($_POST['env'] ) && $_POST['env'] && "cadastro" ){
